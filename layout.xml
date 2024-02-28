@@ -288,54 +288,89 @@
     <menu type="custom" imageType="artwork_front" scrollTime=".2" scrollAcceleration=".02" miScrollTime="0.1" orientation="horizontal" textFallback="true" x="0" width="center" y="370">
         <itemDefaults alpha="1" x="center" y="370" width="150" maxHeight="220" xOrigin="center" yOrigin="bottom" layer="12" loadFontSize="50" fontSize="50" fontColor="ffffff"/>
         <item xOffset="-1150" alpha="0"/>
-        <item xOffset="-875">
+        <item xOffset="-875" alpha="1">
             <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
             <onGameExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+            <onIdle>
+                <set duration="3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>
         </item>
-        <item xOffset="-600">
+        <item xOffset="-600" alpha="1">
             <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
             <onGameExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+            <onIdle>
+                <set duration="3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>        
         </item>
-        <item xOffset="-325">
+        <item xOffset="-325" alpha="1">
             <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
             <onGameExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+            <onIdle>
+                <set duration="3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>
         </item>
-        <item xOffset="0" yOffset="10" selected="true" width="200" maxHeight="270" layer="13">
+        <item xOffset="0" yOffset="10" selected="true" width="200" maxHeight="270" alpha="1" layer="13">
             <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
             <onGameExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+            <onIdle>
+                <set duration="3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>
         </item>
-        <item xOffset="325">
+        <item xOffset="325" alpha="1">
             <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
             <onGameExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+            <onIdle>
+                <set duration="3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>        
         </item>
-        <item xOffset="600">
+        <item xOffset="600" alpha="1">
             <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
             <onGameExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+            <onIdle>
+                <set duration="3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>        
         </item>
-        <item xOffset="875">
+        <item xOffset="875" alpha="1">
             <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="i"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
             <onGameExit  menuIndex="i"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+             <onIdle>
+                <set duration="3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>       
         </item>
         <item xOffset="1150" alpha="0"/>
     </menu>

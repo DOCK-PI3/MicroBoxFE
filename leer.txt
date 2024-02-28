@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                            MicroBoxFE  v1.0
+                   para usar con retrofe 0.10.21 y superiores
+                           http://www.retrofe.nl/
+                  MicroBoxFE Theme (C) 2024 Dockpi3 "mabedeep" EmulOS Team
+                         mail  dock.pi3@gmail.com
+
+ imfo: meter cajas delanteras ,logos ,marquee o lo que quieras mostrar dentro del menu de la coleccion en ej: RetroFE\collections\Sega Megadrive\medium_artwork\artwork_front
+ se usan los videos como fondos de pantalla asi que si no tienes video escrapeado o captura de pantalla en su lugar...se vera la pantalla de fondo negra...sin media!!!
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

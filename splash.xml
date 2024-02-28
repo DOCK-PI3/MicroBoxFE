@@ -1,0 +1,12 @@
+<layout width="1920" height="1080" font="WeirdComic-Regular.ttf" loadFontSize="32" fontColor="dedede">
+   
+
+<video src="video/intro.mp4" height="1080" width="1920" alpha="1">
+        <onExit><set duration=".3"><animate type="alpha"  to="0"/><animate type="volume" to="0"/></set></onExit>
+</video>
+
+</layout>
+
+
+
+

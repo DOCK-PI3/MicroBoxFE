@@ -411,7 +411,7 @@
                 </set>
             </onMenuEnter> 
              <onMenuEnter menuIndex="0">
-                <set duration="0.3">
+                <set duration="0.1">
                     <animate type="alpha" from="0.5" to="0"/>
                     <animate type="layer" to="0"/>
                 </set>
@@ -426,7 +426,7 @@
                 </set>
             </onMenuEnter>
              <onMenuEnter menuIndex="0">
-                <set duration="0.3">
+                <set duration="0.1">
                     <animate type="alpha" from="0.5" to="0"/>
                     <animate type="layer" to="0"/>
                 </set>
@@ -441,7 +441,7 @@
                 </set>
             </onMenuEnter> 
              <onMenuEnter menuIndex="0">
-                <set duration="0.3">
+                <set duration="0.1">
                     <animate type="alpha" from="0.5" to="0"/>
                     <animate type="layer" to="0"/>
                 </set>

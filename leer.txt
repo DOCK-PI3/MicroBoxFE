@@ -4,9 +4,67 @@
                            http://www.retrofe.nl/
                   MicroBoxFE Theme (C) 2024 Dockpi3 "mabedeep" EmulOS Team
                          mail  dock.pi3@gmail.com
-
- imfo: meter cajas delanteras ,logos ,marquee o lo que quieras mostrar dentro del menu de la coleccion en ej: RetroFE\collections\Sega Megadrive\medium_artwork\artwork_front
- se usan los videos como fondos de pantalla asi que si no tienes video escrapeado o captura de pantalla en su lugar...se vera la pantalla de fondo negra...sin media!!!
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#DIRECTORIO Y MEDIA USADA EN EL THEME "LAYOUT"
+
+
+-------------------------------------------------------------
+
+RetroFE\collections\NOMBRE DE COLECCION\medium_artwork\ : 
+
+-------------------------------------------------------------
+
+
+screentitle ---> Muestra FANART como fondo si existe.
+
+screenshot ---> Muestra captura del juego si no hay video, si el video existe no se muestra.
+
+logo ---> Logo del juego.
+
+medium_front ---> Cartucho del juego "support".
+
+artwork_front ---> Caja del juego,se muestra en el menu para seleccionar juego.
+
+videos ---> Videos cortos de los juegos, se mustra como fondo a pantallla completa.
+
+
+
+-------------------------------------------------------------
+RetroFE\collections\NOMBRE DE COLECCION\system_artwork\ : 
+-------------------------------------------------------------
+
+
+logo ---> Logo del sistema
+
+video ---> Video del sistema, se mustra como fondo a pantallla completa.
+
+device ---> Imagen del sistema o su control ,mando o joystick.
+
+
+
+-------------------------------------------------------------
+RetroFE\collections\_common\medium_artwork\ :
+-------------------------------------------------------------
+
+
+numberPlayers ---> Numero de jugadores.
+
+genre ---> Genero del juego.
+
+
+
+
+############################################################################
+
+Creditos: 
+
+############################################################################
+
+
+A toda la informacion descrita en ---> http://www.retrofe.nl/wiki/doku.php?id=layouts
+
+Creadores de los layout Aeon Nox y RetroSpin ya que observando su codigo pude entender mejor como funcionan los efectos y menus tipo horizontal,vertical y carrusel.
+
 

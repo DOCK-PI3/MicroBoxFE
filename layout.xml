@@ -43,24 +43,29 @@
         <onGameExit       menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
     </reloadableImage>
 
-    <!-- FONDO -->
-    <image src="images/fondo-sd.jpg" alpha="0" x="0" y="0" width="1920" height="1080" xOrigin="left" yOrigin="top" layer="0">
+    <!-- FONDO ESTATICO -->
+ <!--   <image src="images/fondo-sd.jpg" alpha="0.7" x="0" y="0" width="1920" height="1080" xOrigin="left" yOrigin="top" layer="0">
+    </image>  -->
+
+    <!-- IMAGEN FANART - EL SISTEMA LA BUSCA EN RetroFE\collections\NOMBRE DE COLECCION\medium_artwork\screentitle CON EL NOMBRE EJ: nombredejuego.png -->
+    <reloadableImage type="screentitle" alpha="0" x="0" y="0" width="stretch" height="stretch" xOrigin="left" yOrigin="top" layer="1">
         <onEnter>                       <set duration=".1"><animate type="alpha" to="1"/></set></onEnter>
         <onExit>                        <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
-        <onMenuEnter      menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
-        <onMenuExit       menuIndex="0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
-        <onMenuJumpEnter  menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
-        <onMenuJumpExit   menuIndex="0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
-        <onPlaylistEnter  menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
-        <onPlaylistExit   menuIndex="0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
-        <onHighlightEnter menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></onHighlightEnter>
-        <onHighlightExit  menuIndex="0"><set duration=".1"><animate type="alpha" to="0"/></set></onHighlightExit>
-        <onGameEnter      menuIndex="0"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
-        <onGameExit       menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
-    </image>
+        <onMenuEnter      menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
+        <onMenuExit       menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+        <onMenuJumpEnter  menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
+        <onMenuJumpExit   menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+        <onPlaylistEnter  menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
+        <onPlaylistExit   menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+        <onHighlightEnter menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onHighlightEnter>
+        <onHighlightExit  menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onHighlightExit>
+        <onGameEnter      menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
+        <onGameExit       menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
+    </reloadableImage>
+
 
     <!-- FULL VIDEO BG SYSTEM-->
-    <reloadableVideo imageType="screenshot" alpha="0" x="0" y="0" xOrigin="left" yOrigin="top" Width="1925" height="1080" layer="3">
+    <reloadableVideo imageType="screenshot" alpha="0" x="0" y="0" xOrigin="left" yOrigin="top" Width="1928" height="1080" layer="3">
         <onEnter>                       <set duration=".1"><animate type="alpha" to="1"/></set></onEnter>
         <onExit>                        <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter      menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
@@ -207,7 +212,7 @@
         <onGameExit  menuIndex="!0"><set duration=".1"><animate type="alpha"            to="1"/>  </set></oneGameExit>
     </reloadableText>
 
-    <!-- show genre image - TODO LO QUE PONO mode="common" hace referancia a la carpeta  RetroFE\collections\_common -->
+    <!-- show genre image - TODO LO QUE PONE mode="common" hace referancia a la carpeta  RetroFE\collections\_common\medium_artwork -->
     <reloadableImage type="genre" mode="common" alpha="0" x="1870" y="1070" maxWidth="85" height="85" xOrigin="center" yOrigin="bottom" layer="15">
         <onExit>                         <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter      menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
@@ -269,7 +274,7 @@
             <set duration=".7">
                 <animate type="x" from="250" to="420" algorithm="linear"/>
             </set>
-            <set duration="9">
+            <set duration="6">
                 <animate type="alpha" to="0" algorithm="easeinquadratic"/>
             </set>
         </onIdle>
@@ -368,7 +373,7 @@
     </menu>
 
     <!-- VIDEO CUANDO ENTRAS A LA COLECCION - VIDEOS DE LOS JUEGOS - SI NO HAY VIDEO MUESTRA CAPTURA DE PANTALLA -->
-     <reloadableVideo imageType="screenshot" alpha="1" x="0" y="0" width="1925" height="1080" xOrigin="left" yOrigin="top" layer="1">
+     <reloadableVideo imageType="screenshot" alpha="1" x="3" y="0" width="1925" height="1080" xOrigin="left" yOrigin="top" layer="1">
         <onEnter>                  <set duration=".1"><animate type="alpha" to="1"/></set></onEnter>
         <onExit>                   <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter menuIndex="0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>

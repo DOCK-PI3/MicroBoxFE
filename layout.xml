@@ -47,23 +47,6 @@
  <!--   <image src="images/fondo-sd.jpg" alpha="0.7" x="0" y="0" width="1920" height="1080" xOrigin="left" yOrigin="top" layer="0">
     </image>  -->
 
-    <!-- IMAGEN FANART - EL SISTEMA LA BUSCA EN RetroFE\collections\NOMBRE DE COLECCION\medium_artwork\screentitle CON EL NOMBRE EJ: nombredejuego.png -->
-    <reloadableImage type="screentitle" alpha="0" x="0" y="0" width="stretch" height="stretch" xOrigin="left" yOrigin="top" layer="1">
-        <onEnter>                       <set duration=".1"><animate type="alpha" to="1"/></set></onEnter>
-        <onExit>                        <set duration=".1"><animate type="alpha" to="0"/></set></onExit>
-        <onMenuEnter      menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
-        <onMenuExit       menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
-        <onMenuJumpEnter  menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
-        <onMenuJumpExit   menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
-        <onPlaylistEnter  menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onMenuEnter>
-        <onPlaylistExit   menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
-        <onHighlightEnter menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></onHighlightEnter>
-        <onHighlightExit  menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></onHighlightExit>
-        <onGameEnter      menuIndex="!0"><set duration=".1"><animate type="alpha" to="0"/></set></oneGameEnter>
-        <onGameExit       menuIndex="!0"><set duration=".1"><animate type="alpha" to="1"/></set></oneGameExit>
-    </reloadableImage>
-
-
     <!-- FULL VIDEO BG SYSTEM-->
     <reloadableVideo imageType="screenshot" alpha="0" x="0" y="0" xOrigin="left" yOrigin="top" Width="1928" height="1080" layer="3">
         <onEnter>                       <set duration=".05"><animate type="alpha" to="1"/></set></onEnter>
@@ -280,6 +263,28 @@
         </onIdle>
     </reloadableImage>
 
+    <!-- IMAGEN FANART - EL SISTEMA LA BUSCA EN RetroFE\collections\NOMBRE DE COLECCION\medium_artwork\screentitle CON EL NOMBRE EJ: nombredejuego.png -->
+    <reloadableImage type="screentitle" alpha="0" x="0" y="0" width="stretch" height="stretch" xOrigin="left" yOrigin="top" layer="4">
+        <onEnter>                       <set duration=".4"><animate type="alpha" to="1"/></set></onEnter>
+        <onExit>                        <set duration=".04"><animate type="alpha" to="0"/></set></onExit>
+        <onMenuEnter      menuIndex="!0"><set duration=".4"><animate type="alpha" to="1"/></set></onMenuEnter>
+        <onMenuExit       menuIndex="!0"><set duration=".04"><animate type="alpha" to="0"/></set></onMenuExit>
+        <onMenuJumpEnter  menuIndex="!0"><set duration=".4"><animate type="alpha" to="1"/></set></onMenuEnter>
+        <onMenuJumpExit   menuIndex="!0"><set duration=".04"><animate type="alpha" to="0"/></set></onMenuExit>
+        <onPlaylistEnter  menuIndex="!0"><set duration=".4"><animate type="alpha" to="1"/></set></onMenuEnter>
+        <onPlaylistExit   menuIndex="!0"><set duration=".04"><animate type="alpha" to="0"/></set></onMenuExit>
+        <onHighlightEnter menuIndex="!0"><set duration=".4"><animate type="alpha" to="1"/></set></onHighlightEnter>
+        <onHighlightExit  menuIndex="!0"><set duration=".04"><animate type="alpha" to="0"/></set></onHighlightExit>
+        <onGameEnter      menuIndex="!0"><set duration=".04"><animate type="alpha" to="0"/></set></oneGameEnter>
+        <onGameExit       menuIndex="!0"><set duration=".4"><animate type="alpha" to="1"/></set></oneGameExit>
+            <onIdle>
+                <set duration=".3">
+                    <animate type="alpha" to="0" algorithm="easeinquadratic"/>
+                </set>
+            </onIdle>
+    </reloadableImage>
+
+
     <!-- MENU DE LA COLECCION -->
     <!-- MENU TIPO CAJA BOX - BUSCA LA CAJA DELANTERA EN LA CARPETA artwork_front DENTRO DE LA COLECCION -->
     <menu type="custom" imageType="artwork_front" scrollTime=".2" scrollAcceleration=".02" miScrollTime="0.1" orientation="horizontal" textFallback="true" x="0" width="center" y="395">
@@ -373,28 +378,28 @@
     </menu>
 
     <!-- VIDEO CUANDO ENTRAS A LA COLECCION - VIDEOS DE LOS JUEGOS - SI NO HAY VIDEO MUESTRA CAPTURA DE PANTALLA -->
-     <reloadableVideo imageType="screenshot" alpha="1" x="3" y="0" width="1925" height="1080" xOrigin="left" yOrigin="top" layer="1">
-        <onEnter>                  <set duration=".07"><animate type="alpha" to="1"/></set></onEnter>
-        <onExit>                   <set duration=".07"><animate type="alpha" to="0"/></set></onExit>
-        <onMenuEnter menuIndex="0"><set duration=".07"><animate type="alpha" to="1"/></set></onMenuEnter>
-        <onMenuExit  menuIndex="0"><set duration=".07"><animate type="alpha" to="0"/></set></onMenuExit>
-        <onMenuJumpEnter>          <set duration=".07"><animate type="alpha" to="1"/></set></onHighlightEnter>
-        <onMenuJumpExit>           <set duration=".07"><animate type="alpha" to="0"/></set></onHighlightExit>
-        <onPlaylistEnter>          <set duration=".07"><animate type="alpha" to="1"/></set></onHighlightEnter>
-        <onPlaylistExit>           <set duration=".07"><animate type="alpha" to="0"/></set></onHighlightExit>
-        <onHighlightEnter>         <set duration=".07"><animate type="alpha" to="1"/></set></onHighlightEnter>
-        <onHighlightExit>          <set duration=".07"><animate type="alpha" to="0"/></set></onHighlightExit>
-        <onGameExit>               <set duration=".07"><animate type="alpha" to="1"/></set></oneGameExit>
-        <onGameEnter>              <set duration=".07"><animate type="alpha" to="0"/></set></oneGameEnter> 
+     <reloadableVideo imageType="screenshot" alpha="1" x="3" y="0" width="1925" height="1080" xOrigin="left" yOrigin="top" layer="3">
+        <onEnter>                  <set duration=".12"><animate type="alpha" to="1"/></set></onEnter>
+        <onExit>                   <set duration=".06"><animate type="alpha" to="0"/></set></onExit>
+        <onMenuEnter menuIndex="0"><set duration=".12"><animate type="alpha" to="1"/></set></onMenuEnter>
+        <onMenuExit  menuIndex="0"><set duration=".06"><animate type="alpha" to="0"/></set></onMenuExit>
+        <onMenuJumpEnter>          <set duration=".12"><animate type="alpha" to="1"/></set></onHighlightEnter>
+        <onMenuJumpExit>           <set duration=".06"><animate type="alpha" to="0"/></set></onHighlightExit>
+        <onPlaylistEnter>          <set duration=".12"><animate type="alpha" to="1"/></set></onHighlightEnter>
+        <onPlaylistExit>           <set duration=".06"><animate type="alpha" to="0"/></set></onHighlightExit>
+        <onHighlightEnter>         <set duration=".12"><animate type="alpha" to="1"/></set></onHighlightEnter>
+        <onHighlightExit>          <set duration=".06"><animate type="alpha" to="0"/></set></onHighlightExit>
+        <onGameExit>               <set duration=".12"><animate type="alpha" to="1"/></set></oneGameExit>
+        <onGameEnter>              <set duration=".06"><animate type="alpha" to="0"/></set></oneGameEnter> 
         <onMenuEnter menuIndex="!0">
-            <set duration=".01">
+            <set duration=".12">
                 <animate type="x"         to="0"/>
                 <animate type="y"         to="0" />
                 <animate type="width"     to="1920"/>
                 <animate type="height" to="1080"/>
                 <animate type="layer" to="3"/>
             </set>
-            <set duration=".03">
+            <set duration=".12">
                 <animate type="alpha" to="1"/>
             </set>
         </onMenuEnter>
